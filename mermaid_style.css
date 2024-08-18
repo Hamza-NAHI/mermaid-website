@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #cae8ff;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    text-align: left;
+    padding: 20px;
+    background-color: #cae8ff;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #757575;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 50%;
+    background-color: #cae8ff;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    flex: 1;
+    min-width: 50%;
+    background-color: #3f51b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #c5cae9;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+}
+
+#login {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #cc0099;
+    font-size: 1rem;
+}
+
+#login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #48cae4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+    background-color: #0096c7;
+}
